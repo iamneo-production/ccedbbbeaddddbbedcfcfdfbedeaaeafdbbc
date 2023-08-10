@@ -16,9 +16,10 @@ if (qsnAttempt === 4) {
 // Show the result if all question are attempted
 setCard(true)
 }
-if (clicked === answer)
+if (clicked === answer){
 // Increase the score if the answer is correct
 correctAnswerMarkUpdate(attempt + 1)
+}
 // Styles for the button
 const norm = "bg-red-300 px-2 py-1 rounded hover:bg-orange-400"
 const disable = "bg-orange-300 px-2 py-1 rounded disabled:opacity-50"
@@ -32,5 +33,6 @@ return (
 </div>
 </div>
 )
+}
 }
 export default Card;
